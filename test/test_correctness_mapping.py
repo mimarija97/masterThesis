@@ -2,7 +2,6 @@ import unittest
 
 from metadata_resolver import process_topic_name
 from metadata_models import basicMetadataModel,extendedMetadataModel
-import time
 
 class MyTestCase(unittest.TestCase):
 

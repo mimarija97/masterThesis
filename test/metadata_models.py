@@ -689,6 +689,765 @@ extendedMetadataModel = {
     }
 }
 
+extendedMetadataModelDuplicated = {
+    "floors": {
+        "has_parent": None,
+        "single": True,
+        "groundFloor": {
+            "aliases": ["ground_floor", "groundfloor"],
+            "areas": ["livingroom", "kitchen", "hallway", "bathroom1"]
+        },
+        "firstFloor": {
+            "aliases": ["first_floor", "firstfloor"],
+            "areas": ["suite", "bedroom2", "bedroom3", "bathroom2"]
+        },
+        "garden": {
+            "aliases": [],
+            "areas": ["garage", "sittingArea"]
+        }
+    },
+    "areas": {
+        "has_parent": ["floors"],
+        "single": True,
+        "bathroom": {
+            "aliases": [],
+        },
+        "kitchen": {
+            "aliases": [],
+            "measurement": [],
+            "binary_measurement": ["smoke"],
+            "device": ["tempDevice2", "humidityDevice1"]
+        },
+        "livingroom": {
+            "aliases": ["living_room"],
+            "device": ["tempDevice1"],
+            "measurement": ["light"],
+            "binary_measurement": []
+        },
+        "hallway": {
+            "aliases": [],
+            "measurement": [],
+            "binary_measurement": [],
+            "device": ["lightDevice1"]
+        },
+        # first floor
+        "suite": {
+            "aliases": ["bedroom1"],
+            "measurement": ["temperature"],
+            "binary_measurement": []
+        },
+        "bedroom2": {
+            "aliases": ["bedroom2"],
+            "measurement": [],
+            "sensor": ["motionSensor1"]
+        },
+        "bedroom3": {
+            "aliases": ["bedroom3"],
+            "measurement": [],
+            "sensor": ["motionSensor2"]
+        },
+        "bathroom2": {
+            "aliases": []
+        },
+        # garden
+        "garage": {
+            "aliases": [],
+            "measurement": [],
+            "binary_measurement": [],
+            "device": ["garageContactDevice"]
+        },
+        "sittingArea": {
+            "aliases": [],
+            "measurement": [],
+            "binary_measurement": ["motion"]
+        }
+    },
+    "measurement": {
+        "has_parent": ["areas", "sensor", "device"],
+        "single": True,
+        "apparent_power": {
+            "aliases": []
+        },
+        "aqi": {
+            "aliases": []
+        },
+        "area": {
+            "aliases": []
+        },
+        "atmospheric_pressure": {
+            "aliases": []
+        },
+        "battery": {
+            "aliases": []
+        },
+        "blood_glucose_concentration": {
+            "aliases": []
+        },
+        "co": {
+            "aliases": []
+        },
+        "co2": {
+            "aliases": []
+        },
+        "conductivity": {
+            "aliases": []
+        },
+        "current": {
+            "aliases": []
+        },
+        "data_rate": {
+            "aliases": []
+        },
+        "data_size": {
+            "aliases": []
+        },
+        "distance": {
+            "aliases": []
+        },
+        "duration": {
+            "aliases": []
+        },
+        "energy": {
+            "aliases": []
+        },
+        "energy_distance": {
+            "aliases": []
+        },
+        "energy_storage": {
+            "aliases": []
+        },
+        "frequency": {
+            "aliases": []
+        },
+        "gas": {
+            "aliases": []
+        },
+        "humidity": {
+            "aliases": []
+        },
+        "illuminance": {
+            "aliases": []
+        },
+        "irradiance": {
+            "aliases": []
+        },
+        "moisture": {
+            "aliases": []
+        },
+        "nitrogen_dioxide": {
+            "aliases": []
+        },
+        "nitrogen_monoxide": {
+            "aliases": []
+        },
+        "nitrous_oxide": {
+            "aliases": []
+        },
+        "ozone": {
+            "aliases": []
+        },
+        "ph": {
+            "aliases": []
+        },
+        "pm1": {
+            "aliases": []
+        },
+        "pm10": {
+            "aliases": []
+        },
+        "pm25": {
+            "aliases": []
+        },
+        "power_factor": {
+            "aliases": []
+        },
+        "power": {
+            "aliases": []
+        },
+        "precipitation": {
+            "aliases": []
+        },
+        "precipitation_intensity": {
+            "aliases": []
+        },
+        "pressure": {
+            "aliases": []
+        },
+        "reactive_power": {
+            "aliases": []
+        },
+        "signal_strength": {
+            "aliases": []
+        },
+        "sound_pressure": {
+            "aliases": []
+        },
+        "speed": {
+            "aliases": []
+        },
+        "sulphur_dioxide": {
+            "aliases": []
+        },
+        "temperature": {
+            "aliases": []
+        },
+        "volatile_organic_compounds": {
+            "aliases": []
+        },
+        "volatile_organic_compounds_parts": {
+            "aliases": []
+        },
+        "voltage": {
+            "aliases": []
+        },
+        "volume": {
+            "aliases": []
+        },
+        "volume_flow_rate": {
+            "aliases": []
+        },
+        "volume_storage": {
+            "aliases": []
+        },
+        "water": {
+            "aliases": []
+        },
+        "weight": {
+            "aliases": []
+        },
+        "wind_direction": {
+            "aliases": []
+        },
+        "wind_speed": {
+            "aliases": []
+        }
+    },
+    "binary_measurement": {
+        "has_parent": ["areas", "sensor", "device"],
+        "single": True,
+        "battery_charging": {
+            "aliases": []
+        },
+        "cold": {
+            "aliases": []
+        },
+        "connectivity": {
+            "aliases": []
+        },
+        "door": {
+            "aliases": []
+        },
+        "garage_door": {
+            "aliases": []
+        },
+        "heat": {
+            "aliases": []
+        },
+        "light": {
+            "aliases": []
+        },
+        "lock": {
+            "aliases": []
+        },
+        "motion": {
+            "aliases": []
+        },
+        "moving": {
+            "aliases": []
+        },
+        "occupancy": {
+            "aliases": []
+        },
+        "opening": {
+            "aliases": []
+        },
+        "plug": {
+            "aliases": []
+        },
+        "presence": {
+            "aliases": []
+        },
+        "problem": {
+            "aliases": []
+        },
+        "running": {
+            "aliases": []
+        },
+        "safety": {
+            "aliases": []
+        },
+        "smoke": {
+            "aliases": []
+        },
+        "sound": {
+            "aliases": []
+        },
+        "tamper": {
+            "aliases": []
+        },
+        "update": {
+            "aliases": []
+        },
+        "vibration": {
+            "aliases": []
+        },
+        "window": {
+            "aliases": []
+        }
+    },
+    "labels": {
+        "has_parent": ["floors", "areas", "device"],
+        "single": False,
+        "area1": {
+            "aliases": []
+        }, "area2": {
+            "aliases": []
+        }, "security": {
+            "aliases": []
+        }, "energy": {
+            "aliases": ["energy-saving"]
+        }, "binary": {
+            "aliases": []
+        }, "automations": {
+            "aliases": []
+        }, "health": {
+            "aliases": []
+        }, "ambience": {
+            "aliases": []
+        }
+    },
+    "device": {
+        "has_parent": ["areas"],
+        "single": True,
+        "tempDevice1": {
+            "aliases": [],
+            "binary_measurement": [],
+            "measurement": ["temperature"]
+        },
+        "tempDevice2": {
+            "aliases": [],
+            "binary_measurement": [],
+            "measurement": ["temperature"]
+        },
+        "lightDevice1": {
+            "aliases": [],
+            "binary_measurement": ["light"],
+            "measurement": []
+        },
+        "humidityDevice1": {
+            "aliases": [],
+            "binary_measurement": [],
+            "measurement": ["humidity"]
+        },
+        "garageContactDevice1": {
+            "aliases": [],
+            "sensor": ["garageContactSensor1"],
+            "binary_measurement": ["garage_door"],
+            "measurement": []
+        }
+    },
+    "sensor": {
+        "has_parent": ["device", "areas"],
+        "single": True,
+        "garageContactSensor1": {
+            "aliases": [],
+            "label": ["security"],
+            "binary_measurement": ["garage_door"],
+            "measurement": []
+        },
+        "motionSensor1": {
+            "aliases": [],
+            "label": ["security", "energy"],
+            "binary_measurement": ["motion"],
+            "measurement": []
+        },
+        "motionSensor2": {
+            "aliases": [],
+            "label": ["security", "energy"],
+            "binary_measurement": ["motion"],
+            "measurement": []
+        }
+    },
+    "floors_copy": {
+        "has_parent": None,
+        "single": True,
+        "groundFloor": {
+            "aliases": ["ground_floor", "groundfloor"],
+            "areas": ["livingroom", "kitchen", "hallway", "bathroom1"]
+        },
+        "firstFloor": {
+            "aliases": ["first_floor", "firstfloor"],
+            "areas": ["suite", "bedroom2", "bedroom3", "bathroom2"]
+        },
+        "garden": {
+            "aliases": [],
+            "areas": ["garage", "sittingArea"]
+        }
+    },
+    "areas_copy": {
+        "has_parent": ["floors"],
+        "single": True,
+        "bathroom": {
+            "aliases": [],
+        },
+        "kitchen": {
+            "aliases": [],
+            "measurement": [],
+            "binary_measurement": ["smoke"],
+            "device": ["tempDevice2", "humidityDevice1"]
+        },
+        "livingroom": {
+            "aliases": ["living_room"],
+            "device": ["tempDevice1"],
+            "measurement": ["light"],
+            "binary_measurement": []
+        },
+        "hallway": {
+            "aliases": [],
+            "measurement": [],
+            "binary_measurement": [],
+            "device": ["lightDevice1"]
+        },
+        # first floor
+        "suite": {
+            "aliases": ["bedroom1"],
+            "measurement": ["temperature"],
+            "binary_measurement": []
+        },
+        "bedroom2": {
+            "aliases": ["bedroom2"],
+            "measurement": [],
+            "sensor": ["motionSensor1"]
+        },
+        "bedroom3": {
+            "aliases": ["bedroom3"],
+            "measurement": [],
+            "sensor": ["motionSensor2"]
+        },
+        "bathroom2": {
+            "aliases": []
+        },
+        # garden
+        "garage": {
+            "aliases": [],
+            "measurement": [],
+            "binary_measurement": [],
+            "device": ["garageContactDevice"]
+        },
+        "sittingArea": {
+            "aliases": [],
+            "measurement": [],
+            "binary_measurement": ["motion"]
+        }
+    },
+    "measurement_copy": {
+        "has_parent": ["areas", "sensor", "device"],
+        "single": True,
+        "apparent_power": {
+            "aliases": []
+        },
+        "aqi": {
+            "aliases": []
+        },
+        "area": {
+            "aliases": []
+        },
+        "atmospheric_pressure": {
+            "aliases": []
+        },
+        "battery": {
+            "aliases": []
+        },
+        "blood_glucose_concentration": {
+            "aliases": []
+        },
+        "co": {
+            "aliases": []
+        },
+        "co2": {
+            "aliases": []
+        },
+        "conductivity": {
+            "aliases": []
+        },
+        "current": {
+            "aliases": []
+        },
+        "data_rate": {
+            "aliases": []
+        },
+        "data_size": {
+            "aliases": []
+        },
+        "distance": {
+            "aliases": []
+        },
+        "duration": {
+            "aliases": []
+        },
+        "energy": {
+            "aliases": []
+        },
+        "energy_distance": {
+            "aliases": []
+        },
+        "energy_storage": {
+            "aliases": []
+        },
+        "frequency": {
+            "aliases": []
+        },
+        "gas": {
+            "aliases": []
+        },
+        "humidity": {
+            "aliases": []
+        },
+        "illuminance": {
+            "aliases": []
+        },
+        "irradiance": {
+            "aliases": []
+        },
+        "moisture": {
+            "aliases": []
+        },
+        "nitrogen_dioxide": {
+            "aliases": []
+        },
+        "nitrogen_monoxide": {
+            "aliases": []
+        },
+        "nitrous_oxide": {
+            "aliases": []
+        },
+        "ozone": {
+            "aliases": []
+        },
+        "ph": {
+            "aliases": []
+        },
+        "pm1": {
+            "aliases": []
+        },
+        "pm10": {
+            "aliases": []
+        },
+        "pm25": {
+            "aliases": []
+        },
+        "power_factor": {
+            "aliases": []
+        },
+        "power": {
+            "aliases": []
+        },
+        "precipitation": {
+            "aliases": []
+        },
+        "precipitation_intensity": {
+            "aliases": []
+        },
+        "pressure": {
+            "aliases": []
+        },
+        "reactive_power": {
+            "aliases": []
+        },
+        "signal_strength": {
+            "aliases": []
+        },
+        "sound_pressure": {
+            "aliases": []
+        },
+        "speed": {
+            "aliases": []
+        },
+        "sulphur_dioxide": {
+            "aliases": []
+        },
+        "temperature": {
+            "aliases": []
+        },
+        "volatile_organic_compounds": {
+            "aliases": []
+        },
+        "volatile_organic_compounds_parts": {
+            "aliases": []
+        },
+        "voltage": {
+            "aliases": []
+        },
+        "volume": {
+            "aliases": []
+        },
+        "volume_flow_rate": {
+            "aliases": []
+        },
+        "volume_storage": {
+            "aliases": []
+        },
+        "water": {
+            "aliases": []
+        },
+        "weight": {
+            "aliases": []
+        },
+        "wind_direction": {
+            "aliases": []
+        },
+        "wind_speed": {
+            "aliases": []
+        }
+    },
+    "binary_measurement_copy": {
+        "has_parent": ["areas", "sensor", "device"],
+        "single": True,
+        "battery_charging": {
+            "aliases": []
+        },
+        "cold": {
+            "aliases": []
+        },
+        "connectivity": {
+            "aliases": []
+        },
+        "door": {
+            "aliases": []
+        },
+        "garage_door": {
+            "aliases": []
+        },
+        "heat": {
+            "aliases": []
+        },
+        "light": {
+            "aliases": []
+        },
+        "lock": {
+            "aliases": []
+        },
+        "motion": {
+            "aliases": []
+        },
+        "moving": {
+            "aliases": []
+        },
+        "occupancy": {
+            "aliases": []
+        },
+        "opening": {
+            "aliases": []
+        },
+        "plug": {
+            "aliases": []
+        },
+        "presence": {
+            "aliases": []
+        },
+        "problem": {
+            "aliases": []
+        },
+        "running": {
+            "aliases": []
+        },
+        "safety": {
+            "aliases": []
+        },
+        "smoke": {
+            "aliases": []
+        },
+        "sound": {
+            "aliases": []
+        },
+        "tamper": {
+            "aliases": []
+        },
+        "update": {
+            "aliases": []
+        },
+        "vibration": {
+            "aliases": []
+        },
+        "window": {
+            "aliases": []
+        }
+    },
+    "labels_copy": {
+        "has_parent": ["floors", "areas", "device"],
+        "single": False,
+        "area1": {
+            "aliases": []
+        }, "area2": {
+            "aliases": []
+        }, "security": {
+            "aliases": []
+        }, "energy": {
+            "aliases": ["energy-saving"]
+        }, "binary": {
+            "aliases": []
+        }, "automations": {
+            "aliases": []
+        }, "health": {
+            "aliases": []
+        }, "ambience": {
+            "aliases": []
+        }
+    },
+    "device_copy": {
+        "has_parent": ["areas"],
+        "single": True,
+        "tempDevice1": {
+            "aliases": [],
+            "binary_measurement": [],
+            "measurement": ["temperature"]
+        },
+        "tempDevice2": {
+            "aliases": [],
+            "binary_measurement": [],
+            "measurement": ["temperature"]
+        },
+        "lightDevice1": {
+            "aliases": [],
+            "binary_measurement": ["light"],
+            "measurement": []
+        },
+        "humidityDevice1": {
+            "aliases": [],
+            "binary_measurement": [],
+            "measurement": ["humidity"]
+        },
+        "garageContactDevice1": {
+            "aliases": [],
+            "sensor": ["garageContactSensor1"],
+            "binary_measurement": ["garage_door"],
+            "measurement": []
+        }
+    },
+    "sensor_copy": {
+        "has_parent": ["device", "areas"],
+        "single": True,
+        "garageContactSensor1": {
+            "aliases": [],
+            "label": ["security"],
+            "binary_measurement": ["garage_door"],
+            "measurement": []
+        },
+        "motionSensor1": {
+            "aliases": [],
+            "label": ["security", "energy"],
+            "binary_measurement": ["motion"],
+            "measurement": []
+        },
+        "motionSensor2": {
+            "aliases": [],
+            "label": ["security", "energy"],
+            "binary_measurement": ["motion"],
+            "measurement": []
+        }
+    }
+}
+
 largeMetadataModelWithParentLinks = {
     "floors": {
         "has_parent": None,
@@ -2185,7 +2944,6 @@ basicMetadataModelMultiConnections  = {
     }
 }
 
-
 metadataModelExtendedInstances = {
     "floors": {
         "has_parent": None,
@@ -2665,6 +3423,1458 @@ metadataModelExtendedInstances = {
         }
     }
 }
+
+basicMetadataModelNoParents = {
+    "floors": {
+        "has_parent": None,
+        "single": True,
+        "groundFloor": {
+            "aliases": ["ground_floor", "groundfloor"],
+            "areas": ["livingroom", "kitchen", "hallway", "bathroom1"]
+        },
+        "firstFloor": {
+            "aliases": ["first_floor", "firstfloor"],
+            "areas": ["suite", "bedroom2", "bedroom3", "bathroom2"]
+        },
+        "garden": {
+            "aliases": [],
+            "areas": ["garage", "sittingArea"]
+        }
+    },
+    "areas": {
+        "has_parent": None,
+        "single": True,
+        "bathroom": {
+            "aliases": [],
+        },
+        "kitchen": {
+            "aliases": [],
+            "measurement": [],
+            "binary_measurement": ["smoke"],
+            "device": ["tempDevice2", "humidityDevice1"]
+        },
+        "livingroom": {
+            "aliases": ["living_room"],
+            "measurement": ["light"],
+            "binary_measurement": [],
+            "device": ["tempDevice1"]
+        },
+        "hallway": {
+            "aliases": [],
+            "measurement": ["light"],
+            "binary_measurement": [],
+            "device": ["lightDevice1"]
+        },
+        # first floor
+        "suite": {
+            "aliases": ["bedroom1"],
+            "measurement": ["temperature"],
+            "binary_measurement": []
+        },
+        "bedroom2": {
+            "aliases": ["bedroom2"],
+            "measurement": [],
+            "binary_measurement": ["motion"],
+            "sensor": ["motionSensor1"]
+        },
+        "bedroom3": {
+            "aliases": ["bedroom3"],
+            "measurement": [],
+            "binary_measurement": ["motion"],
+            "sensor": ["motionSensor2"]
+        },
+        "bathroom2": {
+            "aliases": []
+        },
+        # garden
+        "garage": {
+            "aliases": [],
+            "measurement": [],
+            "binary_measurement": [],
+            "device": ["garageContactDevice"]
+        },
+        "sittingArea": {
+            "aliases": [],
+            "measurement": [],
+            "binary_measurement": ["motion"]
+        }
+    },
+    "measurement": {
+        "has_parent": None,
+        "single": True,
+        "apparent_power": {
+            "aliases": []
+        },
+        "aqi": {
+            "aliases": []
+        },
+        "area": {
+            "aliases": []
+        },
+        "atmospheric_pressure": {
+            "aliases": []
+        },
+        "battery": {
+            "aliases": []
+        },
+        "blood_glucose_concentration": {
+            "aliases": []
+        },
+        "co": {
+            "aliases": []
+        },
+        "co2": {
+            "aliases": []
+        },
+        "conductivity": {
+            "aliases": []
+        },
+        "current": {
+            "aliases": []
+        },
+        "data_rate": {
+            "aliases": []
+        },
+        "data_size": {
+            "aliases": []
+        },
+        "distance": {
+            "aliases": []
+        },
+        "duration": {
+            "aliases": []
+        },
+        "energy": {
+            "aliases": []
+        },
+        "energy_distance": {
+            "aliases": []
+        },
+        "energy_storage": {
+            "aliases": []
+        },
+        "frequency": {
+            "aliases": []
+        },
+        "gas": {
+            "aliases": []
+        },
+        "humidity": {
+            "aliases": []
+        },
+        "illuminance": {
+            "aliases": []
+        },
+        "irradiance": {
+            "aliases": []
+        },
+        "moisture": {
+            "aliases": []
+        },
+        "nitrogen_dioxide": {
+            "aliases": []
+        },
+        "nitrogen_monoxide": {
+            "aliases": []
+        },
+        "nitrous_oxide": {
+            "aliases": []
+        },
+        "ozone": {
+            "aliases": []
+        },
+        "ph": {
+            "aliases": []
+        },
+        "pm1": {
+            "aliases": []
+        },
+        "pm10": {
+            "aliases": []
+        },
+        "pm25": {
+            "aliases": []
+        },
+        "power_factor": {
+            "aliases": []
+        },
+        "power": {
+            "aliases": []
+        },
+        "precipitation": {
+            "aliases": []
+        },
+        "precipitation_intensity": {
+            "aliases": []
+        },
+        "pressure": {
+            "aliases": []
+        },
+        "reactive_power": {
+            "aliases": []
+        },
+        "signal_strength": {
+            "aliases": []
+        },
+        "sound_pressure": {
+            "aliases": []
+        },
+        "speed": {
+            "aliases": []
+        },
+        "sulphur_dioxide": {
+            "aliases": []
+        },
+        "temperature": {
+            "aliases": []
+        },
+        "volatile_organic_compounds": {
+            "aliases": []
+        },
+        "volatile_organic_compounds_parts": {
+            "aliases": []
+        },
+        "voltage": {
+            "aliases": []
+        },
+        "volume": {
+            "aliases": []
+        },
+        "volume_flow_rate": {
+            "aliases": []
+        },
+        "volume_storage": {
+            "aliases": []
+        },
+        "water": {
+            "aliases": []
+        },
+        "weight": {
+            "aliases": []
+        },
+        "wind_direction": {
+            "aliases": []
+        },
+        "wind_speed": {
+            "aliases": []
+        }
+    },
+    "binary_measurement": {
+        "has_parent": None,
+        "single": True,
+        "battery_charging": {
+            "aliases": []
+        },
+        "cold": {
+            "aliases": []
+        },
+        "connectivity": {
+            "aliases": []
+        },
+        "door": {
+            "aliases": []
+        },
+        "garage_door": {
+            "aliases": []
+        },
+        "heat": {
+            "aliases": []
+        },
+        "light": {
+            "aliases": []
+        },
+        "lock": {
+            "aliases": []
+        },
+        "motion": {
+            "aliases": []
+        },
+        "moving": {
+            "aliases": []
+        },
+        "occupancy": {
+            "aliases": []
+        },
+        "opening": {
+            "aliases": []
+        },
+        "plug": {
+            "aliases": []
+        },
+        "presence": {
+            "aliases": []
+        },
+        "problem": {
+            "aliases": []
+        },
+        "running": {
+            "aliases": []
+        },
+        "safety": {
+            "aliases": []
+        },
+        "smoke": {
+            "aliases": []
+        },
+        "sound": {
+            "aliases": []
+        },
+        "tamper": {
+            "aliases": []
+        },
+        "update": {
+            "aliases": []
+        },
+        "vibration": {
+            "aliases": []
+        },
+        "window": {
+            "aliases": []
+        }
+    }
+}
+
+extendedMetadataModelNoParents = {
+    "floors": {
+        "has_parent": None,
+        "single": True,
+        "groundFloor": {
+            "aliases": ["ground_floor", "groundfloor"],
+            "areas": ["livingroom", "kitchen", "hallway", "bathroom1"]
+        },
+        "firstFloor": {
+            "aliases": ["first_floor", "firstfloor"],
+            "areas": ["suite", "bedroom2", "bedroom3", "bathroom2"]
+        },
+        "garden": {
+            "aliases": [],
+            "areas": ["garage", "sittingArea"]
+        }
+    },
+    "areas": {
+        "has_parent": None,
+        "single": True,
+        "bathroom": {
+            "aliases": [],
+        },
+        "kitchen": {
+            "aliases": [],
+            "measurement": [],
+            "binary_measurement": ["smoke"],
+            "device": ["tempDevice2", "humidityDevice1"]
+        },
+        "livingroom": {
+            "aliases": ["living_room"],
+            "device": ["tempDevice1"],
+            "measurement": ["light"],
+            "binary_measurement": []
+        },
+        "hallway": {
+            "aliases": [],
+            "measurement": [],
+            "binary_measurement": [],
+            "device": ["lightDevice1"]
+        },
+        # first floor
+        "suite": {
+            "aliases": ["bedroom1"],
+            "measurement": ["temperature"],
+            "binary_measurement": []
+        },
+        "bedroom2": {
+            "aliases": ["bedroom2"],
+            "measurement": [],
+            "sensor": ["motionSensor1"]
+        },
+        "bedroom3": {
+            "aliases": ["bedroom3"],
+            "measurement": [],
+            "sensor": ["motionSensor2"]
+        },
+        "bathroom2": {
+            "aliases": []
+        },
+        # garden
+        "garage": {
+            "aliases": [],
+            "measurement": [],
+            "binary_measurement": [],
+            "device": ["garageContactDevice"]
+        },
+        "sittingArea": {
+            "aliases": [],
+            "measurement": [],
+            "binary_measurement": ["motion"]
+        }
+    },
+    "measurement": {
+        "has_parent": None,
+        "single": True,
+        "apparent_power": {
+            "aliases": []
+        },
+        "aqi": {
+            "aliases": []
+        },
+        "area": {
+            "aliases": []
+        },
+        "atmospheric_pressure": {
+            "aliases": []
+        },
+        "battery": {
+            "aliases": []
+        },
+        "blood_glucose_concentration": {
+            "aliases": []
+        },
+        "co": {
+            "aliases": []
+        },
+        "co2": {
+            "aliases": []
+        },
+        "conductivity": {
+            "aliases": []
+        },
+        "current": {
+            "aliases": []
+        },
+        "data_rate": {
+            "aliases": []
+        },
+        "data_size": {
+            "aliases": []
+        },
+        "distance": {
+            "aliases": []
+        },
+        "duration": {
+            "aliases": []
+        },
+        "energy": {
+            "aliases": []
+        },
+        "energy_distance": {
+            "aliases": []
+        },
+        "energy_storage": {
+            "aliases": []
+        },
+        "frequency": {
+            "aliases": []
+        },
+        "gas": {
+            "aliases": []
+        },
+        "humidity": {
+            "aliases": []
+        },
+        "illuminance": {
+            "aliases": []
+        },
+        "irradiance": {
+            "aliases": []
+        },
+        "moisture": {
+            "aliases": []
+        },
+        "nitrogen_dioxide": {
+            "aliases": []
+        },
+        "nitrogen_monoxide": {
+            "aliases": []
+        },
+        "nitrous_oxide": {
+            "aliases": []
+        },
+        "ozone": {
+            "aliases": []
+        },
+        "ph": {
+            "aliases": []
+        },
+        "pm1": {
+            "aliases": []
+        },
+        "pm10": {
+            "aliases": []
+        },
+        "pm25": {
+            "aliases": []
+        },
+        "power_factor": {
+            "aliases": []
+        },
+        "power": {
+            "aliases": []
+        },
+        "precipitation": {
+            "aliases": []
+        },
+        "precipitation_intensity": {
+            "aliases": []
+        },
+        "pressure": {
+            "aliases": []
+        },
+        "reactive_power": {
+            "aliases": []
+        },
+        "signal_strength": {
+            "aliases": []
+        },
+        "sound_pressure": {
+            "aliases": []
+        },
+        "speed": {
+            "aliases": []
+        },
+        "sulphur_dioxide": {
+            "aliases": []
+        },
+        "temperature": {
+            "aliases": []
+        },
+        "volatile_organic_compounds": {
+            "aliases": []
+        },
+        "volatile_organic_compounds_parts": {
+            "aliases": []
+        },
+        "voltage": {
+            "aliases": []
+        },
+        "volume": {
+            "aliases": []
+        },
+        "volume_flow_rate": {
+            "aliases": []
+        },
+        "volume_storage": {
+            "aliases": []
+        },
+        "water": {
+            "aliases": []
+        },
+        "weight": {
+            "aliases": []
+        },
+        "wind_direction": {
+            "aliases": []
+        },
+        "wind_speed": {
+            "aliases": []
+        }
+    },
+    "binary_measurement": {
+        "has_parent": None,
+        "single": True,
+        "battery_charging": {
+            "aliases": []
+        },
+        "cold": {
+            "aliases": []
+        },
+        "connectivity": {
+            "aliases": []
+        },
+        "door": {
+            "aliases": []
+        },
+        "garage_door": {
+            "aliases": []
+        },
+        "heat": {
+            "aliases": []
+        },
+        "light": {
+            "aliases": []
+        },
+        "lock": {
+            "aliases": []
+        },
+        "motion": {
+            "aliases": []
+        },
+        "moving": {
+            "aliases": []
+        },
+        "occupancy": {
+            "aliases": []
+        },
+        "opening": {
+            "aliases": []
+        },
+        "plug": {
+            "aliases": []
+        },
+        "presence": {
+            "aliases": []
+        },
+        "problem": {
+            "aliases": []
+        },
+        "running": {
+            "aliases": []
+        },
+        "safety": {
+            "aliases": []
+        },
+        "smoke": {
+            "aliases": []
+        },
+        "sound": {
+            "aliases": []
+        },
+        "tamper": {
+            "aliases": []
+        },
+        "update": {
+            "aliases": []
+        },
+        "vibration": {
+            "aliases": []
+        },
+        "window": {
+            "aliases": []
+        }
+    },
+    "labels": {
+        "has_parent": None,
+        "single": False,
+        "area1": {
+            "aliases": []
+        }, "area2": {
+            "aliases": []
+        }, "security": {
+            "aliases": []
+        }, "energy": {
+            "aliases": ["energy-saving"]
+        }, "binary": {
+            "aliases": []
+        }, "automations": {
+            "aliases": []
+        }, "health": {
+            "aliases": []
+        }, "ambience": {
+            "aliases": []
+        }
+    },
+    "device": {
+        "has_parent": None,
+        "single": True,
+        "tempDevice1": {
+            "aliases": [],
+            "binary_measurement": [],
+            "measurement": ["temperature"]
+        },
+        "tempDevice2": {
+            "aliases": [],
+            "binary_measurement": [],
+            "measurement": ["temperature"]
+        },
+        "lightDevice1": {
+            "aliases": [],
+            "binary_measurement": ["light"],
+            "measurement": []
+        },
+        "humidityDevice1": {
+            "aliases": [],
+            "binary_measurement": [],
+            "measurement": ["humidity"]
+        },
+        "garageContactDevice1": {
+            "aliases": [],
+            "sensor": ["garageContactSensor1"],
+            "binary_measurement": ["garage_door"],
+            "measurement": []
+        }
+    },
+    "sensor": {
+        "has_parent": None,
+        "single": True,
+        "garageContactSensor1": {
+            "aliases": [],
+            "label": ["security"],
+            "binary_measurement": ["garage_door"],
+            "measurement": []
+        },
+        "motionSensor1": {
+            "aliases": [],
+            "label": ["security", "energy"],
+            "binary_measurement": ["motion"],
+            "measurement": []
+        },
+        "motionSensor2": {
+            "aliases": [],
+            "label": ["security", "energy"],
+            "binary_measurement": ["motion"],
+            "measurement": []
+        }
+    }
+}
+
+
+extendedMetadataModelDuplicatedNoParents = {
+    "floors": {
+        "has_parent": None,
+        "single": True,
+        "groundFloor": {
+            "aliases": ["ground_floor", "groundfloor"],
+            "areas": ["livingroom", "kitchen", "hallway", "bathroom1"]
+        },
+        "firstFloor": {
+            "aliases": ["first_floor", "firstfloor"],
+            "areas": ["suite", "bedroom2", "bedroom3", "bathroom2"]
+        },
+        "garden": {
+            "aliases": [],
+            "areas": ["garage", "sittingArea"]
+        }
+    },
+    "areas": {
+        "has_parent": None,
+        "single": True,
+        "bathroom": {
+            "aliases": [],
+        },
+        "kitchen": {
+            "aliases": [],
+            "measurement": [],
+            "binary_measurement": ["smoke"],
+            "device": ["tempDevice2", "humidityDevice1"]
+        },
+        "livingroom": {
+            "aliases": ["living_room"],
+            "device": ["tempDevice1"],
+            "measurement": ["light"],
+            "binary_measurement": []
+        },
+        "hallway": {
+            "aliases": [],
+            "measurement": [],
+            "binary_measurement": [],
+            "device": ["lightDevice1"]
+        },
+        # first floor
+        "suite": {
+            "aliases": ["bedroom1"],
+            "measurement": ["temperature"],
+            "binary_measurement": []
+        },
+        "bedroom2": {
+            "aliases": ["bedroom2"],
+            "measurement": [],
+            "sensor": ["motionSensor1"]
+        },
+        "bedroom3": {
+            "aliases": ["bedroom3"],
+            "measurement": [],
+            "sensor": ["motionSensor2"]
+        },
+        "bathroom2": {
+            "aliases": []
+        },
+        # garden
+        "garage": {
+            "aliases": [],
+            "measurement": [],
+            "binary_measurement": [],
+            "device": ["garageContactDevice"]
+        },
+        "sittingArea": {
+            "aliases": [],
+            "measurement": [],
+            "binary_measurement": ["motion"]
+        }
+    },
+    "measurement": {
+        "has_parent": None,
+        "single": True,
+        "apparent_power": {
+            "aliases": []
+        },
+        "aqi": {
+            "aliases": []
+        },
+        "area": {
+            "aliases": []
+        },
+        "atmospheric_pressure": {
+            "aliases": []
+        },
+        "battery": {
+            "aliases": []
+        },
+        "blood_glucose_concentration": {
+            "aliases": []
+        },
+        "co": {
+            "aliases": []
+        },
+        "co2": {
+            "aliases": []
+        },
+        "conductivity": {
+            "aliases": []
+        },
+        "current": {
+            "aliases": []
+        },
+        "data_rate": {
+            "aliases": []
+        },
+        "data_size": {
+            "aliases": []
+        },
+        "distance": {
+            "aliases": []
+        },
+        "duration": {
+            "aliases": []
+        },
+        "energy": {
+            "aliases": []
+        },
+        "energy_distance": {
+            "aliases": []
+        },
+        "energy_storage": {
+            "aliases": []
+        },
+        "frequency": {
+            "aliases": []
+        },
+        "gas": {
+            "aliases": []
+        },
+        "humidity": {
+            "aliases": []
+        },
+        "illuminance": {
+            "aliases": []
+        },
+        "irradiance": {
+            "aliases": []
+        },
+        "moisture": {
+            "aliases": []
+        },
+        "nitrogen_dioxide": {
+            "aliases": []
+        },
+        "nitrogen_monoxide": {
+            "aliases": []
+        },
+        "nitrous_oxide": {
+            "aliases": []
+        },
+        "ozone": {
+            "aliases": []
+        },
+        "ph": {
+            "aliases": []
+        },
+        "pm1": {
+            "aliases": []
+        },
+        "pm10": {
+            "aliases": []
+        },
+        "pm25": {
+            "aliases": []
+        },
+        "power_factor": {
+            "aliases": []
+        },
+        "power": {
+            "aliases": []
+        },
+        "precipitation": {
+            "aliases": []
+        },
+        "precipitation_intensity": {
+            "aliases": []
+        },
+        "pressure": {
+            "aliases": []
+        },
+        "reactive_power": {
+            "aliases": []
+        },
+        "signal_strength": {
+            "aliases": []
+        },
+        "sound_pressure": {
+            "aliases": []
+        },
+        "speed": {
+            "aliases": []
+        },
+        "sulphur_dioxide": {
+            "aliases": []
+        },
+        "temperature": {
+            "aliases": []
+        },
+        "volatile_organic_compounds": {
+            "aliases": []
+        },
+        "volatile_organic_compounds_parts": {
+            "aliases": []
+        },
+        "voltage": {
+            "aliases": []
+        },
+        "volume": {
+            "aliases": []
+        },
+        "volume_flow_rate": {
+            "aliases": []
+        },
+        "volume_storage": {
+            "aliases": []
+        },
+        "water": {
+            "aliases": []
+        },
+        "weight": {
+            "aliases": []
+        },
+        "wind_direction": {
+            "aliases": []
+        },
+        "wind_speed": {
+            "aliases": []
+        }
+    },
+    "binary_measurement": {
+        "has_parent": None,
+        "single": True,
+        "battery_charging": {
+            "aliases": []
+        },
+        "cold": {
+            "aliases": []
+        },
+        "connectivity": {
+            "aliases": []
+        },
+        "door": {
+            "aliases": []
+        },
+        "garage_door": {
+            "aliases": []
+        },
+        "heat": {
+            "aliases": []
+        },
+        "light": {
+            "aliases": []
+        },
+        "lock": {
+            "aliases": []
+        },
+        "motion": {
+            "aliases": []
+        },
+        "moving": {
+            "aliases": []
+        },
+        "occupancy": {
+            "aliases": []
+        },
+        "opening": {
+            "aliases": []
+        },
+        "plug": {
+            "aliases": []
+        },
+        "presence": {
+            "aliases": []
+        },
+        "problem": {
+            "aliases": []
+        },
+        "running": {
+            "aliases": []
+        },
+        "safety": {
+            "aliases": []
+        },
+        "smoke": {
+            "aliases": []
+        },
+        "sound": {
+            "aliases": []
+        },
+        "tamper": {
+            "aliases": []
+        },
+        "update": {
+            "aliases": []
+        },
+        "vibration": {
+            "aliases": []
+        },
+        "window": {
+            "aliases": []
+        }
+    },
+    "labels": {
+        "has_parent": None,
+        "single": False,
+        "area1": {
+            "aliases": []
+        }, "area2": {
+            "aliases": []
+        }, "security": {
+            "aliases": []
+        }, "energy": {
+            "aliases": ["energy-saving"]
+        }, "binary": {
+            "aliases": []
+        }, "automations": {
+            "aliases": []
+        }, "health": {
+            "aliases": []
+        }, "ambience": {
+            "aliases": []
+        }
+    },
+    "device": {
+        "has_parent": None,
+        "single": True,
+        "tempDevice1": {
+            "aliases": [],
+            "binary_measurement": [],
+            "measurement": ["temperature"]
+        },
+        "tempDevice2": {
+            "aliases": [],
+            "binary_measurement": [],
+            "measurement": ["temperature"]
+        },
+        "lightDevice1": {
+            "aliases": [],
+            "binary_measurement": ["light"],
+            "measurement": []
+        },
+        "humidityDevice1": {
+            "aliases": [],
+            "binary_measurement": [],
+            "measurement": ["humidity"]
+        },
+        "garageContactDevice1": {
+            "aliases": [],
+            "sensor": ["garageContactSensor1"],
+            "binary_measurement": ["garage_door"],
+            "measurement": []
+        }
+    },
+    "sensor": {
+        "has_parent": None,
+        "single": True,
+        "garageContactSensor1": {
+            "aliases": [],
+            "label": ["security"],
+            "binary_measurement": ["garage_door"],
+            "measurement": []
+        },
+        "motionSensor1": {
+            "aliases": [],
+            "label": ["security", "energy"],
+            "binary_measurement": ["motion"],
+            "measurement": []
+        },
+        "motionSensor2": {
+            "aliases": [],
+            "label": ["security", "energy"],
+            "binary_measurement": ["motion"],
+            "measurement": []
+        }
+    },
+    "floors_copy": {
+        "has_parent": None,
+        "single": True,
+        "groundFloor": {
+            "aliases": ["ground_floor", "groundfloor"],
+            "areas": ["livingroom", "kitchen", "hallway", "bathroom1"]
+        },
+        "firstFloor": {
+            "aliases": ["first_floor", "firstfloor"],
+            "areas": ["suite", "bedroom2", "bedroom3", "bathroom2"]
+        },
+        "garden": {
+            "aliases": [],
+            "areas": ["garage", "sittingArea"]
+        }
+    },
+    "areas_copy": {
+        "has_parent": None,
+        "single": True,
+        "bathroom": {
+            "aliases": [],
+        },
+        "kitchen": {
+            "aliases": [],
+            "measurement": [],
+            "binary_measurement": ["smoke"],
+            "device": ["tempDevice2", "humidityDevice1"]
+        },
+        "livingroom": {
+            "aliases": ["living_room"],
+            "device": ["tempDevice1"],
+            "measurement": ["light"],
+            "binary_measurement": []
+        },
+        "hallway": {
+            "aliases": [],
+            "measurement": [],
+            "binary_measurement": [],
+            "device": ["lightDevice1"]
+        },
+        # first floor
+        "suite": {
+            "aliases": ["bedroom1"],
+            "measurement": ["temperature"],
+            "binary_measurement": []
+        },
+        "bedroom2": {
+            "aliases": ["bedroom2"],
+            "measurement": [],
+            "sensor": ["motionSensor1"]
+        },
+        "bedroom3": {
+            "aliases": ["bedroom3"],
+            "measurement": [],
+            "sensor": ["motionSensor2"]
+        },
+        "bathroom2": {
+            "aliases": []
+        },
+        # garden
+        "garage": {
+            "aliases": [],
+            "measurement": [],
+            "binary_measurement": [],
+            "device": ["garageContactDevice"]
+        },
+        "sittingArea": {
+            "aliases": [],
+            "measurement": [],
+            "binary_measurement": ["motion"]
+        }
+    },
+    "measurement_copy": {
+        "has_parent": None,
+        "single": True,
+        "apparent_power": {
+            "aliases": []
+        },
+        "aqi": {
+            "aliases": []
+        },
+        "area": {
+            "aliases": []
+        },
+        "atmospheric_pressure": {
+            "aliases": []
+        },
+        "battery": {
+            "aliases": []
+        },
+        "blood_glucose_concentration": {
+            "aliases": []
+        },
+        "co": {
+            "aliases": []
+        },
+        "co2": {
+            "aliases": []
+        },
+        "conductivity": {
+            "aliases": []
+        },
+        "current": {
+            "aliases": []
+        },
+        "data_rate": {
+            "aliases": []
+        },
+        "data_size": {
+            "aliases": []
+        },
+        "distance": {
+            "aliases": []
+        },
+        "duration": {
+            "aliases": []
+        },
+        "energy": {
+            "aliases": []
+        },
+        "energy_distance": {
+            "aliases": []
+        },
+        "energy_storage": {
+            "aliases": []
+        },
+        "frequency": {
+            "aliases": []
+        },
+        "gas": {
+            "aliases": []
+        },
+        "humidity": {
+            "aliases": []
+        },
+        "illuminance": {
+            "aliases": []
+        },
+        "irradiance": {
+            "aliases": []
+        },
+        "moisture": {
+            "aliases": []
+        },
+        "nitrogen_dioxide": {
+            "aliases": []
+        },
+        "nitrogen_monoxide": {
+            "aliases": []
+        },
+        "nitrous_oxide": {
+            "aliases": []
+        },
+        "ozone": {
+            "aliases": []
+        },
+        "ph": {
+            "aliases": []
+        },
+        "pm1": {
+            "aliases": []
+        },
+        "pm10": {
+            "aliases": []
+        },
+        "pm25": {
+            "aliases": []
+        },
+        "power_factor": {
+            "aliases": []
+        },
+        "power": {
+            "aliases": []
+        },
+        "precipitation": {
+            "aliases": []
+        },
+        "precipitation_intensity": {
+            "aliases": []
+        },
+        "pressure": {
+            "aliases": []
+        },
+        "reactive_power": {
+            "aliases": []
+        },
+        "signal_strength": {
+            "aliases": []
+        },
+        "sound_pressure": {
+            "aliases": []
+        },
+        "speed": {
+            "aliases": []
+        },
+        "sulphur_dioxide": {
+            "aliases": []
+        },
+        "temperature": {
+            "aliases": []
+        },
+        "volatile_organic_compounds": {
+            "aliases": []
+        },
+        "volatile_organic_compounds_parts": {
+            "aliases": []
+        },
+        "voltage": {
+            "aliases": []
+        },
+        "volume": {
+            "aliases": []
+        },
+        "volume_flow_rate": {
+            "aliases": []
+        },
+        "volume_storage": {
+            "aliases": []
+        },
+        "water": {
+            "aliases": []
+        },
+        "weight": {
+            "aliases": []
+        },
+        "wind_direction": {
+            "aliases": []
+        },
+        "wind_speed": {
+            "aliases": []
+        }
+    },
+    "binary_measurement_copy": {
+        "has_parent": None,
+        "single": True,
+        "battery_charging": {
+            "aliases": []
+        },
+        "cold": {
+            "aliases": []
+        },
+        "connectivity": {
+            "aliases": []
+        },
+        "door": {
+            "aliases": []
+        },
+        "garage_door": {
+            "aliases": []
+        },
+        "heat": {
+            "aliases": []
+        },
+        "light": {
+            "aliases": []
+        },
+        "lock": {
+            "aliases": []
+        },
+        "motion": {
+            "aliases": []
+        },
+        "moving": {
+            "aliases": []
+        },
+        "occupancy": {
+            "aliases": []
+        },
+        "opening": {
+            "aliases": []
+        },
+        "plug": {
+            "aliases": []
+        },
+        "presence": {
+            "aliases": []
+        },
+        "problem": {
+            "aliases": []
+        },
+        "running": {
+            "aliases": []
+        },
+        "safety": {
+            "aliases": []
+        },
+        "smoke": {
+            "aliases": []
+        },
+        "sound": {
+            "aliases": []
+        },
+        "tamper": {
+            "aliases": []
+        },
+        "update": {
+            "aliases": []
+        },
+        "vibration": {
+            "aliases": []
+        },
+        "window": {
+            "aliases": []
+        }
+    },
+    "labels_copy": {
+        "has_parent": None,
+        "single": False,
+        "area1": {
+            "aliases": []
+        }, "area2": {
+            "aliases": []
+        }, "security": {
+            "aliases": []
+        }, "energy": {
+            "aliases": ["energy-saving"]
+        }, "binary": {
+            "aliases": []
+        }, "automations": {
+            "aliases": []
+        }, "health": {
+            "aliases": []
+        }, "ambience": {
+            "aliases": []
+        }
+    },
+    "device_copy": {
+        "has_parent": None,
+        "single": True,
+        "tempDevice1": {
+            "aliases": [],
+            "binary_measurement": [],
+            "measurement": ["temperature"]
+        },
+        "tempDevice2": {
+            "aliases": [],
+            "binary_measurement": [],
+            "measurement": ["temperature"]
+        },
+        "lightDevice1": {
+            "aliases": [],
+            "binary_measurement": ["light"],
+            "measurement": []
+        },
+        "humidityDevice1": {
+            "aliases": [],
+            "binary_measurement": [],
+            "measurement": ["humidity"]
+        },
+        "garageContactDevice1": {
+            "aliases": [],
+            "sensor": ["garageContactSensor1"],
+            "binary_measurement": ["garage_door"],
+            "measurement": []
+        }
+    },
+    "sensor_copy": {
+        "has_parent": None,
+        "single": True,
+        "garageContactSensor1": {
+            "aliases": [],
+            "label": ["security"],
+            "binary_measurement": ["garage_door"],
+            "measurement": []
+        },
+        "motionSensor1": {
+            "aliases": [],
+            "label": ["security", "energy"],
+            "binary_measurement": ["motion"],
+            "measurement": []
+        },
+        "motionSensor2": {
+            "aliases": [],
+            "label": ["security", "energy"],
+            "binary_measurement": ["motion"],
+            "measurement": []
+        }
+    }
+}
+
 # Predefined Message Structure:
 binary_yes = ("false")
 binary_no = ("true")
